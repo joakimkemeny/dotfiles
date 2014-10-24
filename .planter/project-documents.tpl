@@ -1,0 +1,15 @@
+Admin
+Artwork
+	Icon
+		iOS
+		Mac
+		Watch
+		Web
+	Logotype
+Marketing
+Prototype
+	iPad
+	iPhone
+	Mac
+	Watch
+	Web

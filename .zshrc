@@ -20,7 +20,7 @@ ZSH_THEME="joakimkemeny"
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
@@ -46,18 +46,11 @@ ZSH_CUSTOM=$HOME/.oh-my-customizations
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-flow mvn)
+plugins=(brew fasd gem git git-flow mvn npm osx pod)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
-# Exports
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_72.jdk/Contents/Home"
-export MAVEN_OPTS="-Xms256m -Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=256m"
-export CHROME_BIN="/opt/homebrew-cask/Caskroom/google-chrome/latest/Google\ Chrome.app"
-export FIREFOX_BIN="/opt/homebrew-cask/Caskroom/firefox/latest/Firefox.app/Contents/MacOS/firefox-bin"
 
 # Preferred editor
 if [[ -n $SSH_CONNECTION ]]; then
@@ -66,5 +59,16 @@ else
   export EDITOR='rmate'
 fi
 
+# Exports
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_72.jdk/Contents/Home"
+export MAVEN_OPTS="-Xms256m -Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=256m"
+export CHROME_BIN="/opt/homebrew-cask/Caskroom/google-chrome/latest/Google\ Chrome.app"
+export FIREFOX_BIN="/opt/homebrew-cask/Caskroom/firefox/latest/Firefox.app/Contents/MacOS/firefox-bin"
+
 # Aliases
 alias mci="mvn clean install"
+alias mjr="mvn jetty:run"
+alias mjrj="mvn jetty:run -Pjetty"
+alias mfit="mvn verify -Pwiki"
+alias planter="~/Scripts/planter.rb"
