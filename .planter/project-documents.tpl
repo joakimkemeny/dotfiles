@@ -7,6 +7,7 @@ Artwork
 		Web
 	Logotype
 Marketing
+Profiles
 Prototype
 	iPad
 	iPhone
