@@ -54,9 +54,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='/usr/bin/vi'
+  export EDITOR='vim'
 else
-  export EDITOR='/usr/bin/vi'
+  export EDITOR='vim'
 fi
 
 # Exports
@@ -64,6 +64,12 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_72.jdk/Contents/Home"
 export MAVEN_OPTS="-Xms256m -Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=256m"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+# Synology extensions
+if [[ -a "/usr/syno" ]]; then
+  export PATH="$PATH:/opt/bin:/opt/sbin:/usr/syno/sbin:/usr/syno/bin:/usr/local/sbin:/var/packages/JavaManager/target/Java/bin:/var/packages/JavaManager/target/Java/jre/bin:/var/packages/JavaManager/target/Java/bin:/var/packages/JavaManager/target/Java/jre/bin"
+  export JAVA_HOME="/var/packages/JavaManager/target/Java"
+fi
 
 # Aliases
 alias mci="mvn clean install"
