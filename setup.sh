@@ -19,4 +19,5 @@ ln -s ${SRC_DIR}/Scripts ~/Scripts
 
 ln -sf ${SRC_DIR}/.ssh/config ~/.ssh/config
 ln -sf ${SRC_DIR}/.gitconfig ~/.gitconfig
+ln -sf ${SRC_DIR}/.gitignore_global ~/.gitignore_global
 ln -sf ${SRC_DIR}/.zshrc ~/.zshrc

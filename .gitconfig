@@ -2,7 +2,7 @@
 	email = joakim@kemeny.se
 	name = Joakim Kemeny
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = ~/.gitignore_global
 	autocrlf = input
 	editor = mate -w
 [push]
