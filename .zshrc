@@ -65,7 +65,7 @@ export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_72.jdk/Contents/Hom
 export MAVEN_OPTS="-Xms256m -Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=256m"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
-export ZSH_COMPDUMP=~/.zsh-coredump
+export ZSH_COMPDUMP=~/.zsh-compdump
 
 # Synology extensions
 if [[ -a "/usr/syno" ]]; then
