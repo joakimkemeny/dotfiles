@@ -71,7 +71,7 @@ export ZSH_COMPDUMP=~/.zsh-compdump
 
 # Synology extensions
 if [[ -a "/usr/syno" ]]; then
-  export PATH="$PATH:/opt/bin:/opt/sbin:/usr/syno/sbin:/usr/syno/bin:/usr/local/sbin:/var/packages/JavaManager/target/Java/bin:/var/packages/JavaManager/target/Java/jre/bin:/var/packages/JavaManager/target/Java/bin:/var/packages/JavaManager/target/Java/jre/bin"
+  export PATH="$PATH:/opt/bin:/opt/sbin:/usr/syno/sbin:/usr/syno/bin:/usr/local/sbin:/var/packages/JavaManager/target/Java/bin:/var/packages/JavaManager/target/Java/jre/bin:/var/packages/JavaManager/target/Java/bin:/var/packages/JavaManager/target/Java/jre/bin:/opt/local/lib/python2.7/site-packages"
   export JAVA_HOME="/var/packages/JavaManager/target/Java"
 fi
 
