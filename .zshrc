@@ -73,7 +73,7 @@ export ZSH_COMPDUMP=~/.zsh-compdump
 if [[ -a "/usr/syno" ]]; then
   export PATH="/opt/bin:/opt/sbin:$PATH:/usr/syno/sbin:/usr/syno/bin:/usr/local/sbin:/var/packages/JavaManager/target/Java/bin:/var/packages/JavaManager/target/Java/jre/bin:/var/packages/JavaManager/target/Java/bin:/var/packages/JavaManager/target/Java/jre/bin"
   export JAVA_HOME="/var/packages/JavaManager/target/Java"
-  export PYTHONPATH=/volume1/@appstore/py3k/usr/local/lib/python3.4
+  export PYTHONPATH=/opt/lib/python2.7
 fi
 
 # Aliases
