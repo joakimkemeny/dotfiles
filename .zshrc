@@ -48,7 +48,7 @@ ZSH_CUSTOM=$HOME/.oh-my-customizations
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew fasd gem git git-flow mvn npm osx pod)
+plugins=(brew docker fasd gem git git-flow mvn npm osx pod)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -63,7 +63,7 @@ fi
 
 # Exports
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home"
 export MAVEN_OPTS="-Xms256m -Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=256m"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
@@ -82,3 +82,7 @@ alias mjr="mvn jetty:run"
 alias mjrj="mvn jetty:run -Pjetty"
 alias mfit="mvn verify -Pwiki"
 alias planter="~/Scripts/planter.rb"
+
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/Joakim/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
