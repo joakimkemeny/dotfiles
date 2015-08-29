@@ -82,6 +82,10 @@ alias mjr="mvn jetty:run"
 alias mjrj="mvn jetty:run -Pjetty"
 alias mfit="mvn verify -Pwiki"
 alias planter="~/Scripts/planter.rb"
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES;
+killall Finder /System/Library/CoreServices/Finder.app'
+alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO;
+killall Finder /System/Library/CoreServices/Finder.app'
 
 export DOCKER_HOST=tcp://192.168.59.103:2376
 export DOCKER_CERT_PATH=/Users/Joakim/.boot2docker/certs/boot2docker-vm
