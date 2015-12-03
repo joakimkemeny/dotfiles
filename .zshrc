@@ -63,7 +63,7 @@ fi
 
 # Exports
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home"
 export MAVEN_OPTS="-Xms256m -Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=256m"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
@@ -90,6 +90,3 @@ killall Finder /System/Library/CoreServices/Finder.app'
 export DOCKER_HOST=tcp://192.168.59.103:2376
 export DOCKER_CERT_PATH=/Users/Joakim/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
-
-export NVM_DIR="/Users/Joakim/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
