@@ -48,7 +48,7 @@ ZSH_CUSTOM=$HOME/.oh-my-customizations
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew docker fasd gem git git-flow mvn npm osx pod)
+plugins=(aws brew gem git git-flow npm osx)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -56,17 +56,13 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
+  export EDITOR="vim"
 else
-  export EDITOR='vim'
+  export EDITOR="/usr/local/bin/mate -w"
 fi
 
 # Exports
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_72.jdk/Contents/Home"
-export MAVEN_OPTS="-Xms256m -Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=256m"
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-export GROOVY_HOME=/usr/local/opt/groovy/libexec
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.yarn/bin"
 export ZSH_COMPDUMP=~/.zsh-compdump
 
 # Synology extensions
@@ -77,12 +73,7 @@ if [[ -a "/usr/syno" ]]; then
 fi
 
 # Aliases
-alias mci="mvn clean install"
-alias mjr="mvn jetty:run"
-alias mjrj="mvn jetty:run -Pjetty"
-alias mfit="mvn verify -Pwiki"
-alias planter="~/Scripts/planter.rb"
-alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES;
-killall Finder /System/Library/CoreServices/Finder.app'
-alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO;
-killall Finder /System/Library/CoreServices/Finder.app'
+alias nr="npm run -s"
+alias y="yarn"
+alias yi="yarn install --pure-lockfile"
+alias l="ls -l"

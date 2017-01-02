@@ -42,7 +42,6 @@
 .metadata
 .settings/
 .project
-bin/
 tmp/
 
 
