@@ -75,6 +75,7 @@ fi
 # Aliases
 alias nr="npm run -s"
 alias y="yarn"
+alias yr="yarn run"
 alias yi="yarn install --pure-lockfile"
 alias l="ls -l"
 alias c="fasd_cd -d"
