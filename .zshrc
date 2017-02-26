@@ -79,4 +79,4 @@ alias yr="yarn run"
 alias yi="yarn install --pure-lockfile"
 alias l="ls -l"
 alias c="fasd_cd -d"
-
+alias ccred="node-red -u ~/Projects/Telenor/Source/.node-red"
