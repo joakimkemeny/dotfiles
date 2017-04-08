@@ -48,7 +48,7 @@ ZSH_CUSTOM=$HOME/.oh-my-customizations
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aws brew fasd gem git git-flow npm osx)
+plugins=(aws brew fasd gem git git-flow npm osx zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -62,7 +62,7 @@ else
 fi
 
 # Exports
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.yarn/bin"
+export PATH="/Users/joakim/Projects/Presentations/presentation.serverless/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.yarn/bin:/Users/joakim/Projects/Presentations/presentation.serverless/.bin"
 export ZSH_COMPDUMP=~/.zsh-compdump
 
 # Synology extensions
@@ -71,6 +71,8 @@ if [[ -a "/usr/syno" ]]; then
   export JAVA_HOME="/var/packages/JavaManager/target/Java"
   export PYTHONPATH=/opt/local/lib/python2.7/site-packages
 fi
+
+export SLS_IGNORE_WARNING=*
 
 # Aliases
 alias nr="npm run -s"
