@@ -72,8 +72,6 @@ if [[ -a "/usr/syno" ]]; then
   export PYTHONPATH=/opt/local/lib/python2.7/site-packages
 fi
 
-export SLS_IGNORE_WARNING=*
-
 # Aliases
 alias nr="npm run -s"
 alias y="yarn"
