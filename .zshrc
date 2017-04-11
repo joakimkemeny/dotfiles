@@ -83,5 +83,7 @@ alias l="ls -l"
 alias c="fasd_cd -d"
 alias ccred="node-red -u ~/Projects/Telenor/Source/.node-red"
 
+tabs -3
+
 # added by travis gem
 [ -f /Users/joakim/.travis/travis.sh ] && source /Users/joakim/.travis/travis.sh
