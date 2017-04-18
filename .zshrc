@@ -85,5 +85,24 @@ if (( $+commands[tabs] )); then
   tabs -3
 fi
 
+# Tree with hidden files but with some directories excluded
+function tre() {
+  tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRX
+}
+
+# Determine size of a file or total size of a directory
+function fs() {
+  if du -b /dev/null > /dev/null 2>&1; then
+    local arg=-sbh
+  else
+    local arg=-sh
+  fi
+  if [[ -n "$@" ]]; then
+    du $arg -- "$@"
+  else
+    du $arg .[^.]* *
+  fi
+}
+
 # added by travis gem
 [ -f /Users/joakim/.travis/travis.sh ] && source /Users/joakim/.travis/travis.sh
