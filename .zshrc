@@ -62,7 +62,7 @@ else
 fi
 
 # Exports
-export PATH="/Users/joakim/Projects/Presentations/presentation.serverless/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.yarn/bin:/Users/joakim/Projects/Presentations/presentation.serverless/.bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.yarn/bin:/Users/joakim/Projects/Presentations/presentation.serverless/.bin"
 export ZSH_COMPDUMP=~/.zsh-compdump
 
 # Synology extensions
