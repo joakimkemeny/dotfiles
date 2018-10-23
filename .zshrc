@@ -73,6 +73,7 @@ if [[ -a "/usr/syno" ]]; then
 fi
 
 # Aliases
+alias cl="clear"
 alias nr="npm run -s"
 alias y="yarn"
 alias yr="yarn run"
