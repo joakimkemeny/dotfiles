@@ -72,6 +72,8 @@ if [[ -a "/usr/syno" ]]; then
   export PYTHONPATH=/opt/local/lib/python2.7/site-packages
 fi
 
+export LANG=en_US
+
 # Aliases
 alias cl="clear"
 alias nr="npm run -s"
