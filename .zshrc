@@ -80,9 +80,12 @@ alias nr="npm run -s"
 alias y="yarn"
 alias yr="yarn run"
 alias yi="yarn install --pure-lockfile"
+alias ys="yarn start"
+alias yw="yarn watch"
 alias l="ls -l"
 alias c="fasd_cd -d"
 alias ccred="node-red -u ~/Projects/Telenor/Source/.node-red"
+alias rmy="rm -fr node_modules && yarn"
 
 if (( $+commands[tabs] )); then
   tabs -3

@@ -7,3 +7,5 @@
 	editor = mate -w
 [push]
 	default = simple
+[pull]
+	rebase = true
