@@ -67,7 +67,7 @@ export ZSH_COMPDUMP=~/.zsh-compdump
 
 # Synology extensions
 if [[ -a "/usr/syno" ]]; then
-  export PATH="$PATH:/opt/bin:/opt/sbin:/opt/local/bin:/usr/syno/sbin:/usr/syno/bin:/usr/local/sbin:/var/packages/JavaManager/target/Java/bin:/var/packages/JavaManager/target/Java/jre/bin:/var/packages/JavaManager/target/Java/bin:/var/packages/JavaManager/target/Java/jre/bin"
+  export PATH="$PATH:/opt/bin:/opt/sbin:/opt/local/bin:/usr/syno/sbin:/usr/syno/bin:/usr/local/sbin:/var/packages/JavaManager/target/Java/bin:/var/packages/JavaManager/target/Java/jre/bin:/var/packages/JavaManager/target/Java/bin:/var/packages/JavaManager/target/Java/jre/bin:~/bin"
   export JAVA_HOME="/var/packages/JavaManager/target/Java"
   export PYTHONPATH=/opt/local/lib/python2.7/site-packages
 fi
@@ -77,6 +77,7 @@ export LANG=en_US
 # Aliases
 alias cl="clear"
 alias nr="npm run -s"
+alias ni="npm install"
 alias y="yarn"
 alias yr="yarn run"
 alias yi="yarn install --pure-lockfile"
@@ -146,3 +147,6 @@ fi
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [[ -f /Users/joakim/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/joakim/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[[ -f /Users/joakim/.nvm/versions/node/v12.12.0/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/joakim/.nvm/versions/node/v12.12.0/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh
