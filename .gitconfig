@@ -9,3 +9,6 @@
 	default = simple
 [pull]
 	rebase = true
+[credential "https://git-codecommit.eu-west-1.amazonaws.com"]
+	helper = !aws codecommit --profile nevs-koro-dev --region eu-west-1 credential-helper $@
+	usehttppath = true

@@ -77,7 +77,7 @@ export LANG=en_US
 # Aliases
 alias cl="clear"
 alias nr="npm run -s"
-alias ni="npm install"
+alias ni="npm install -s"
 alias y="yarn"
 alias yr="yarn run"
 alias yi="yarn install --pure-lockfile"
@@ -87,6 +87,13 @@ alias l="ls -l"
 alias c="fasd_cd -d"
 alias ccred="node-red -u ~/Projects/Telenor/Source/.node-red"
 alias rmy="rm -fr node_modules && yarn"
+
+alias kemeny="export AWS_PROFILE=kemeny && clear"
+alias lab="export AWS_PROFILE=lab && clear"
+alias kits="export AWS_PROFILE=kits && clear"
+alias dev="export AWS_PROFILE=nevs-koro-dev && clear"
+alias test="export AWS_PROFILE=nevs-koro-test && clear"
+alias okulo="export AWS_PROFILE=nevs-okulo-dev && clear"
 
 if (( $+commands[tabs] )); then
   tabs -3
