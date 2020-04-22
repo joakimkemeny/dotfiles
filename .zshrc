@@ -65,6 +65,8 @@ fi
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.yarn/bin:/Users/joakim/Projects/Presentations/presentation.serverless/.bin:~/bin:~/Scripts"
 export ZSH_COMPDUMP=~/.zsh-compdump
 
+export JAVA_HOME="/Users/joakim/.sdkman/candidates/java/current/bin/java"
+
 # Synology extensions
 if [[ -a "/usr/syno" ]]; then
   export PATH="$PATH:/opt/bin:/opt/sbin:/opt/local/bin:/usr/syno/sbin:/usr/syno/bin:/usr/local/sbin:/var/packages/JavaManager/target/Java/bin:/var/packages/JavaManager/target/Java/jre/bin:/var/packages/JavaManager/target/Java/bin:/var/packages/JavaManager/target/Java/jre/bin"
@@ -85,7 +87,6 @@ alias ys="yarn start"
 alias yw="yarn watch"
 alias l="ls -l"
 alias c="fasd_cd -d"
-alias ccred="node-red -u ~/Projects/Telenor/Source/.node-red"
 alias rmy="rm -fr node_modules && yarn"
 
 alias kemeny="export AWS_PROFILE=kemeny && clear"
@@ -157,3 +158,6 @@ fi
 # tabtab source for slss package
 # uninstall by removing these lines or running `tabtab uninstall slss`
 [[ -f /Users/joakim/.nvm/versions/node/v12.12.0/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/joakim/.nvm/versions/node/v12.12.0/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/joakim/.sdkman"
+[[ -s "/Users/joakim/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/joakim/.sdkman/bin/sdkman-init.sh"
