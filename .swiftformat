@@ -1,0 +1,22 @@
+# file options
+
+--symlinks ignore
+--swiftversion 5.4
+
+# rules
+
+--disable andOperator
+--disable blankLinesAtStartOfScope
+--enable isEmpty
+--enable sortedSwitchCases
+--disable trailingCommas
+--enable wrapEnumCases
+--disable wrapMultilineStatementBraces
+
+# formatting
+
+--header strip
+--ifdef no-indent
+--indent 3
+--indentcase true
+--maxwidth 100

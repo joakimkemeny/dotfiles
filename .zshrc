@@ -44,11 +44,13 @@ HIST_STAMPS="yyyy-mm-dd"
 # ZSH_CUSTOM=/path/to/new-custom-folder
 ZSH_CUSTOM=$HOME/.oh-my-customizations
 
+BASE_URL=http://192.168.100.222:8080/genia-service/api/
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew fasd gem git git-flow npm osx)
+plugins=(aws brew fasd gem git git-flow npm osx)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -62,10 +64,10 @@ else
 fi
 
 # Exports
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.yarn/bin:/Users/joakim/Projects/Presentations/presentation.serverless/.bin:~/bin:~/Scripts"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.yarn/bin:~/bin:~/Scripts:/Users/joakim/Library/Android/sdk/platform-tools"
 export ZSH_COMPDUMP=~/.zsh-compdump
 
-export JAVA_HOME="/Users/joakim/.sdkman/candidates/java/current/bin/java"
+export JAVA_HOME="/Users/joakim/.sdkman/candidates/java/current"
 
 # Synology extensions
 if [[ -a "/usr/syno" ]]; then
@@ -88,6 +90,8 @@ alias yw="yarn watch"
 alias l="ls -l"
 alias c="fasd_cd -d"
 alias rmy="rm -fr node_modules && yarn"
+alias mi="mint install"
+alias mr="mint run"
 
 alias kemeny="export AWS_PROFILE=kemeny && clear"
 alias lab="export AWS_PROFILE=lab && clear"

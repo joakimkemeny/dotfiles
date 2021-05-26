@@ -11,6 +11,7 @@ ln -sf ${SRC_DIR}/.ssh/config ~/.ssh/config
 ln -sf ${SRC_DIR}/.gitconfig ~/.gitconfig
 ln -sf ${SRC_DIR}/.gitignore_global ~/.gitignore_global
 ln -sf ${SRC_DIR}/.hushlogin ~/.hushlogin
-ln -sf ${SRC_DIR}/.prettierrc ~/Projects/.prettierrc
+ln -sf ${SRC_DIR}/.prettierrc ~/Developer/.prettierrc
+ln -sf ${SRC_DIR}/.swiftformat ~/Developer/.swiftformat
 ln -sf ${SRC_DIR}/.vimrc ~/.vimrc
 ln -sf ${SRC_DIR}/.zshrc ~/.zshrc
